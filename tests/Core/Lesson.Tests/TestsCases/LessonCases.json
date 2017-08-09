@@ -1,0 +1,12 @@
+{
+  "BinaryGap": [
+    {
+      "Input": "1041",
+      "Expected": "5"
+    },
+    {
+      "Input": "1610612737",
+      "Expected": "28"
+    }
+  ]
+}
