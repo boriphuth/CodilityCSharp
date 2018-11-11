@@ -42,6 +42,9 @@
   <ItemGroup>
     <Compile Include="BinaryGap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T5.cs" />
+    <Compile Include="T4.cs" />
+    <Compile Include="T3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

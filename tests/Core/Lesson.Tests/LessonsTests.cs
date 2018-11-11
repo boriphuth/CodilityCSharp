@@ -16,5 +16,11 @@ namespace Lessons.Tests
         {
             Run(BinaryGap.Main);
         }
+
+        [Fact]
+        public void T3Test()
+        {
+            Run(T3.Main);
+        }
     }
 }
