@@ -22,5 +22,17 @@ namespace Lessons.Tests
         {
             Run(T3.Main);
         }
+
+        [Fact]
+        public void T4Test()
+        {
+            Run(T4.Main);
+        }
+
+        [Fact]
+        public void T5Test()
+        {
+            Run(T5.Main);
+        }
     }
 }
