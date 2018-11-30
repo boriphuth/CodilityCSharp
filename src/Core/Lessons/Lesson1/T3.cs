@@ -17,14 +17,15 @@ namespace Lesson1.Iterations
             s = s.Replace(" ", string.Empty);
             s = s.Replace("-", string.Empty);
             var result = "";
-            if (s.Length == 9)
-            {
+
+            if (s.Length == 9) {
                 result += s.Substring(0, 3) + "-" + s.Substring(3, 3) + "-" + s.Substring(6, 3);
                 return result;
             }
-            if (s.Length == 10)
-            {
-                result += s.Substring(0, 3) + "-" + s.Substring(3, 3) + "-" + s.Substring(6, 2) + '-' + s.Substring(8, 2);
+
+            if (s.Length == 10) {
+                result += s.Substring(0, 3) + "-" + s.Substring(3, 3) + "-" + s.Substring(6, 2) + '-' +
+                          s.Substring(8, 2);
                 return result;
             }
 
