@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lesson1.Iterations
+namespace Lesson1
 {
    public class T3
     {

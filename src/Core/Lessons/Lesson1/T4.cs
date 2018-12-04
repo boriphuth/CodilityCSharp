@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Lesson1.Iterations
+namespace Lesson1
 {
    public class T4
     {

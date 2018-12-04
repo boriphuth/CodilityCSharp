@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lesson1.Iterations
+namespace Lesson1
 {
     //https://codility.com/programmers/lessons/1-iterations/binary_gap/
     public class BinaryGap

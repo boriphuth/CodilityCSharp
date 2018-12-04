@@ -57,7 +57,8 @@ namespace TestsCore
 
         private Dictionary<string, IEnumerable<TestData>> FromJsonFile(string fileName)
         {
-            using (var streamReader = new StreamReader($"TestsCases/{fileName}"))
+            var filePath = $"TestsCases/{fileName}";
+            using (var streamReader = new StreamReader(filePath))
             {
                 return JsonConvert.DeserializeObject<Dictionary<string, IEnumerable<TestData>>>(streamReader.ReadToEnd());
             }

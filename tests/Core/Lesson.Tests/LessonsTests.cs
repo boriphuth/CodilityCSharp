@@ -1,7 +1,7 @@
-﻿using Lesson1.Iterations;
-using TestsCore;
-using Xunit;
+﻿using Xunit;
 using Xunit.Abstractions;
+using TestsCore;
+using Lesson1;
 
 namespace Lessons.Tests
 {
@@ -32,7 +32,7 @@ namespace Lessons.Tests
         [Fact]
         public void T5Test()
         {
-            Run(T5.Main);
+            //Run(T5.Main);
         }
     }
 }
