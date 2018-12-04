@@ -11,37 +11,37 @@ namespace Lesson1
         Console.WriteLine(string.Join(" ", result));
         }
 
-        public static string Solution(string s)
+        public static string Solution(string S)
         {
             // write your code in C# 6.0 with .NET 4.5 (Mono)
-            s = s.Replace(" ", string.Empty);
-            s = s.Replace("-", string.Empty);
+            S = S.Replace(" ", string.Empty);
+            S = S.Replace("-", string.Empty);
             var result = "";
 
-            if (s.Length == 9) {
-                result += s.Substring(0, 3) + "-" + s.Substring(3, 3) + "-" + s.Substring(6, 3);
+            if (S.Length == 9) {
+                result += S.Substring(0, 3) + "-" + S.Substring(3, 3) + "-" + S.Substring(6, 3);
                 return result;
             }
 
-            if (s.Length == 10) {
-                result += s.Substring(0, 3) + "-" + s.Substring(3, 3) + "-" + s.Substring(6, 2) + '-' +
-                          s.Substring(8, 2);
+            if (S.Length == 10) {
+                result += S.Substring(0, 3) + "-" + S.Substring(3, 3) + "-" + S.Substring(6, 2) + '-' +
+                          S.Substring(8, 2);
                 return result;
             }
 
-            for (var i = 0; i < s.Length; i = i + 3)
+            for (var i = 0; i < S.Length; i = i + 3)
             {
-                if ((s.Length - i) < 3 && s.Length != 10)
+                if ((S.Length - i) < 3 && S.Length != 10)
                 {
-                    result += s.Substring(i);
+                    result += S.Substring(i);
                 }
-                else if (i % 3 == 0 && s.Length != 10)
+                else if (i % 3 == 0 && S.Length != 10)
                 {
-                    result += s.Substring(i, 3) + "-";
+                    result += S.Substring(i, 3) + "-";
                 }
-                else if ((s.Length - i) >= 4)
+                else if ((S.Length - i) >= 4)
                 {
-                    result += s.Substring(i, 2) + '-' + s.Substring(i + 2, 2); 
+                    result += S.Substring(i, 2) + '-' + S.Substring(i + 2, 2); 
                 }
             }
             return result;

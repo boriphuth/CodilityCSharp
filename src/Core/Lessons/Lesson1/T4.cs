@@ -14,19 +14,21 @@ namespace Lesson1
             var readLine = Console.ReadLine();
             if (readLine == null) return;
             var input = readLine.Split(',');
-            var a = new int[input.Length];
+            var A = new int[input.Length];
+
             for (var i =0; i < input.Length; i++)
             {
-                a[i] = Convert.ToInt32(input[i]);
+                A[i] = Convert.ToInt32(input[i]);
             }
            
-            var result = Solution(a);
+            var result = Solution(A);
+
             Console.WriteLine(string.Join(" ", result));
         }
 
-        public static int Solution(int[] a)
+        public static int Solution(int[] A)
         {
-            var q = a.Distinct().ToArray();
+            var q = A.Distinct().ToArray();
             if (!IsSorted(q)) return 0;
             if(q.Length != 3) return q[q.Length - 1];
             return q.Length != 3 ? 0 : 2;

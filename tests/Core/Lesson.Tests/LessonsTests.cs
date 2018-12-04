@@ -32,7 +32,7 @@ namespace Lessons.Tests
         [Fact]
         public void T5Test()
         {
-            //Run(T5.Main);
+            Run(T5.Main);
         }
     }
 }
