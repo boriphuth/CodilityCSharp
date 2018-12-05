@@ -45,11 +45,5 @@ namespace Lesson1
             }
             return true;
         }
-
-        //static bool IsSequential(int[] array)
-        //{
-        //    return array.Zip(array.Skip(1), (a, b) => (a + 1) == b).All(x => x);
-        //}
-  
     }
 }
