@@ -1,38 +1,37 @@
-﻿using Xunit;
-using Xunit.Abstractions;
+﻿using Lesson1;
 using TestsCore;
-using Lesson1;
+using Xunit;
+using Xunit.Abstractions;
 
 namespace Lessons.Tests
 {
     public class LessonTests : BaseTest
     {
-        public LessonTests(ITestOutputHelper output) : base(output)
+        public LessonTests (ITestOutputHelper output) : base (output)
+        { }
+
+        [Fact]
+        public void BinaryGapTest ()
         {
+            Run (BinaryGap.Main);
         }
 
         [Fact]
-        public void BinaryGapTest()
+        public void T3Test ()
         {
-            Run(BinaryGap.Main);
+            Run (T3.Main);
         }
 
         [Fact]
-        public void T3Test()
+        public void T4Test ()
         {
-            Run(T3.Main);
+            Run (T4.Main);
         }
 
         [Fact]
-        public void T4Test()
+        public void T5Test ()
         {
-            Run(T4.Main);
-        }
-
-        [Fact]
-        public void T5Test()
-        {
-            Run(T5.Main);
+            Run (T5.Main);
         }
     }
 }
