@@ -77,7 +77,7 @@ namespace Lesson1
                 if (result == -1)
                 {
                     TimeDiffResult = mline.TimeDiff;
-                   result = Convert.ToInt32(mline.Ddd);
+                    result = Convert.ToInt32(mline.Ddd);
                 }
             }
             return result;

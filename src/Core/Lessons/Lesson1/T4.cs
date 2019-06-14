@@ -3,8 +3,8 @@ using System.Linq;
 
 namespace Lesson1
 {
-   public class T4
-    {
+public class T4
+{
         public static void Main()
         {
             //var input = new int[]{3, 4, 5, 4}; // 2
@@ -20,7 +20,6 @@ namespace Lesson1
             {
                 A[i] = Convert.ToInt32(input[i]);
             }
-           
             var result = Solution(A);
 
             Console.WriteLine(string.Join(" ", result));
