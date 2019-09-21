@@ -76,3 +76,26 @@ WRONG ANSWER  (got 0 expected 1)
 
 Example test:    ('22:22:21', '22:22:23') 
 WRONG ANSWER  (got 0 expected 3) 
+using System;
+// you can also use other imports, for example:
+// using System.Collections.Generic;
+
+// you can write to stdout for debugging purposes, e.g.
+// Console.WriteLine("this is a debug message");
+
+class Solution {
+    public int solution(string S, string T) {
+        // write your code in C# 6.0 with .NET 4.5 (Mono)
+        int result =0;
+        
+        string[] s = S.Split(':');
+        string[] t = T.Split(':');
+       
+        int ss = Convert.ToInt32(s[2]);
+        int tt = Convert.ToInt32(t[2]);
+        if(ss == 0) return 1;
+        result = tt - ss +1;
+            
+        return result;
+    }
+}
