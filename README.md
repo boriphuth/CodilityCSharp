@@ -70,3 +70,9 @@ class Solution {
         return result;
     }
 }
+
+Example test:    ('15:15:00', '15:15:12') 
+WRONG ANSWER  (got 0 expected 1) 
+
+Example test:    ('22:22:21', '22:22:23') 
+WRONG ANSWER  (got 0 expected 3) 
