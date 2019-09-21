@@ -99,3 +99,12 @@ class Solution {
         return result;
     }
 }
+
+Example test:    [3, 4, 3, 0, 2, 2, 3, 0, 0] 
+WRONG ANSWER  (got 28 expected 5) 
+
+Example test:    [4, 4, 3, 3, 1, 0] 
+WRONG ANSWER  (got 10 expected 3) 
+
+Example test:    [4, 2, 0] 
+WRONG ANSWER  (got 1 expected 0) 
